@@ -1,6 +1,6 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
     @font-face {
         font-family: 'Gobold';
@@ -41,10 +41,10 @@
         height: 200dvh;
         background-image: url('/images/Group\ 233.png') ;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 4rem;
         
     }
 
@@ -146,6 +146,7 @@
         line-height: 46px;
         letter-spacing: 0px;
         color: #DDDDDDCC;
+        margin-top: 4rem;
 
 
     }
@@ -169,7 +170,7 @@
         align-items: center;
         position: absolute;
         right: 5rem;
-        top: 89%;
+        top: 93dvh;
         gap: 8px;
         height: 171px;
         width: 350px;
@@ -339,8 +340,9 @@
         background-repeat: no-repeat;
         height: 6060px;
         width: 100%;
-        
+        gap: 10dvh;
         align-items: center;
+        position: relative;
     }
 
 /* Services Tab Styling */
@@ -426,11 +428,11 @@
     }
 
     .glass-frame-content {
-        width: 92%;
+        width: 95%;
         height: 500px;
         display: grid;
-        grid-template-rows: .2fr .1fr 1fr 1fr;
-        grid-template-columns: .2fr 1fr .2fr 1.2fr;
+        grid-template-rows: .7fr .7fr .7fr 1fr;
+        grid-template-columns: .2fr 1.1fr .2fr 1.3fr;
     }
 
     .glass-frame-content .p-one{
@@ -453,7 +455,304 @@
         
     }
 
-    /* .glass-frame-content img {
-        width: 150px;
-        height: 150px;
-    } */
+    .glass-frame-content .image-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* width: 100px;
+        height: 100px; */
+        /* object-fit: fill;
+        object-position: 25% 25%; */
+        
+    }
+
+    .glass-frame-content .word {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .glass-frame-content img {
+        width: 130px;
+        height: 120px;
+        object-fit: contain;
+        object-position: 25% 25% 25%;
+        /* object-fit: fill;
+        object-position: 25% 25%; */
+    }
+
+/* Glass frame Button setup */
+
+    .glass-frame-content .button-container {
+        display: flex;
+        align-items: center;
+        grid-column: span 4;
+        justify-content: center;
+        transition: 500ms all linear;
+        
+    }
+
+    .glass-frame-content .button-container button{
+        width: 244px;
+        height: 71px;
+        background: linear-gradient(185.03deg, rgba(255, 255, 255, 0.51) -43.03%, rgba(217, 217, 217, 0) 127.98%, rgba(255, 255, 255, 0) 127.98%);
+        border: 0.615213px solid #FFFFFF;
+        backdrop-filter: blur(4.61409px);
+        border-radius: 5px;
+        color: #ffffff;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .glass-frame-content .button-container button:hover {
+        background: #403f3f;
+        transition: 500ms all linear;
+    }
+/* ... */
+
+/* Who We Are */
+
+    .body-content .who-we-are {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 55px;
+        height: 60dvh;
+        width: 70dvw;
+        text-align: center;
+        margin-top: 53dvh;
+        margin-bottom: 3dvh;
+        
+    }
+
+    .body-content .who-we-are .intro {
+        font-family: 'Gobold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 131%;
+        /* or 131px */
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(242, 242, 242, 0) 134.19%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        
+    }
+
+    .body-content .who-we-are .content {
+        width: 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 158%;
+        color: #FFFFFF;
+    }
+/* ... */
+
+/* Side Quote */
+    
+    .repositioned-quote-wrap {
+        position: absolute;
+        top: 420dvh;
+        left: 7dvw;
+        width: 20px;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .repositioned-quote {
+        
+        width: 200dvh;
+        height: 93px;
+        /* -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg); */
+        display: flex;
+        align-items: center;
+        /* gap: 10px; */
+    }
+
+    .repositioned-quote .gray-eclipse {
+        width: 16px;
+        height: 16px;
+        background: #A4A4A4;
+        border-radius: 50%;
+    }
+
+    .repositioned-quote p{
+        margin: 0 20px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 90px;
+        color: #939393;
+    }
+
+    .repositioned-quote hr {
+        flex-grow: 2;
+        background: #FFFFFF;
+        opacity: 0.2;
+    }
+
+/* Advertisement Design */
+
+    .advertisemnet-designWrap {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        place-items: center;
+    }
+
+    .advertisemnet-designWrap > * {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    .advertisemnet-designWrap .dropDown-1 {
+        height: 59dvh;
+        width: 69dvw;
+        border-radius: 12px;
+        margin-bottom: 35dvh;
+        background-image: url(/images/Rectangle\ 39266\ \(1\).png);
+        background-size: contain ;
+        /* Change Background size to length for media queries 😋 */
+
+        background-repeat: no-repeat;
+        z-index: 2;
+        backdrop-filter: blur(12px);
+    }
+
+    .advertisemnet-designWrap .dropDown-2 {
+        height: 60dvh;
+        width: 56dvw;
+        border-radius: 12px;
+        margin-bottom: 45dvh;
+        background-image: url(/images/Rectangle\ 39267.png);
+        background-size: contain ;
+        /* Change Background size to length for media queries 😋 */
+
+        background-repeat: no-repeat;
+        z-index: 1;
+        backdrop-filter: blur(12px);
+    }
+
+    .advertisement-design {
+        display: grid;
+        grid-template-rows: 1fr .2fr .1fr;
+        align-items: center;
+        justify-content: center;
+
+        width: 80dvw;
+        height: 79.2dvh;
+        background-image: url(/images/Rectangle\ 39265.png);
+        background-size: contain ;
+        /* Change Background size to length for media queries 😋 */
+
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        z-index: 3;
+        backdrop-filter: blur(12px);
+    }
+
+/* Advertisement design text/link styling */
+
+    .advertisement-design .identity {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #CDCDCD;
+    }
+
+    .advertisement-design .identity .company-name {
+        font-size: 26px;
+        color: #FFFFFF;
+    }
+
+    .advertisement-design .link-CS {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 10px;
+    }
+    .advertisement-design .link-CS a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 5px 0;
+        font-family: 'Work Sans';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0px;
+        color: #A5C3FF;
+        transition: 400ms linear;
+        
+    }
+
+    .advertisement-design .link-CS a:hover {
+        color: #7c7e83;
+        transition: 400ms linear;
+    }
+    
+/* ... */
+
+/* View our portfolio text styling */
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .portfolio .text {
+        font-family: 'Gobold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 81px;
+        line-height: 100px;
+        /* or 123% */
+        
+        text-align: center;
+        letter-spacing: -3px;
+        text-transform: uppercase;
+        
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 120%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    
+    .portfolio .redirect-portfolio {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 20px;
+        /* or 83% */
+        text-transform: uppercase;
+        color: #1095E0;
+    }
+
+/* ... */
+    
