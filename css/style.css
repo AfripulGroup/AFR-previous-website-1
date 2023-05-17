@@ -338,7 +338,7 @@
         background-image: url(/images/Group\ 39.png);
         background-size: contain;
         background-repeat: no-repeat;
-        height: 650vh;
+        height: 600vh;
         width: 100%;
         gap: 10dvh;
         align-items: center;
@@ -799,7 +799,7 @@
         margin-top: 45dvh;
         display: flex;
         flex-direction: column;
-        gap: 15dvh;
+        gap: 20dvh;
         overflow: hidden;
         width: 100%;
         /* align-items: center;
@@ -871,6 +871,16 @@
         backdrop-filter: blur(9px);
         transition: 100ms all ease;
         cursor: pointer;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        /* or 100% */
+        
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
     }
 
     .contact-area a button:hover {
@@ -963,3 +973,150 @@
 
         transform: matrix(0.61, 0.79, -0.79, 0.61, 0, 0);
     }
+
+/* ... */
+
+/* Footer styling */
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer {
+        width: 80%;
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: 1fr .4fr .4fr .4fr;
+        grid-template-rows: 1fr;
+    }
+
+/* Footer About */
+
+    .footer .about {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer .about .lorem {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        /* or 30px */
+
+        color: #FFFFFF;
+    }
+
+    .footer .about form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 0  10px;
+        width: 41%;
+        height: 56px;
+        border: 1px solid #c7c3c3;
+        border-radius: 10px;
+
+        
+    }
+
+    .footer .about form input {
+        flex-grow: 2;
+        height: 100%;
+        background-color: inherit;
+        outline: none;
+        border: none;
+    }
+
+    .footer .about form input::placeholder {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        /* identical to box height, or 21px */
+        
+        
+        color: #A5A5A5;
+    }
+
+    .footer .about form button {
+        height: 24px;
+        width: 24px;
+        background-color: inherit;
+        font-size: 18px;
+        color: #B5B5B5;
+        outline: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .footer .about .credit {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        /* identical to box height, or 18px */
+        
+        
+        
+        color: #FFFFFF;
+        
+        opacity: 0.6; 
+
+    }
+
+/* footer styling continue, end of about */
+
+    .footer .page-redirect, .footer .social-media-links, .footer .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer .page-redirect p, .footer .social-media-links p, .footer .contact p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    .footer .page-redirect ul, .footer .social-media-links ul, .footer .contact ul {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 150%;
+        /* identical to box height, or 30px */
+        
+        
+        /* black/black-100 */
+        
+        color: #FFFFFF;
+        
+        color: #FFFFFF;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: 400ms all ease-in-out;
+    }
+
+    .footer a:hover {
+        color: #9EC0E0;
+        transition: 400ms all ease-in-out;
+    }
+
+/* ....End of Full view style */
