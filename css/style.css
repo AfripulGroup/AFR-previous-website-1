@@ -4,7 +4,7 @@
 
     @font-face {
         font-family: 'Gobold';
-        src: url(/fonts/gobold/Gobold\ Regular.otf);
+        src: url('../fonts/gobold/Gobold Regular.otf');
     }
 
 
@@ -39,7 +39,7 @@
     .first-view {
         width: 100%;
         height: 200dvh;
-        background-image: url('/images/Group\ 233.png') ;
+        background-image: url('/images/Group 233.png') ;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -335,7 +335,7 @@
     .body-content {
         display: flex;
         flex-direction: column;
-        background-image: url(/images/Group\ 39.png);
+        background-image: url('/images/Group 39.png');
         background-size: contain;
         background-repeat: no-repeat;
         height: 600vh;
@@ -630,7 +630,7 @@
         width: 69dvw;
         border-radius: 12px;
         margin-bottom: 38dvh;
-        background-image: url(/images/Rectangle\ 39266\ \(1\).png);
+        background-image: url('/images/Rectangle 39266 (1).png');
         background-size: contain ;
         /* Change Background size to length for media queries 😋 */
 
@@ -644,7 +644,7 @@
         width: 56dvw;
         border-radius: 12px;
         margin-bottom: 49dvh;
-        background-image: url(/images/Rectangle\ 39267.png);
+        background-image: url('/images/Rectangle 39267.png');
         background-size: contain;
         /* Change Background size to length for media queries 😋 */
 
@@ -663,7 +663,7 @@
 
         width: 80dvw;
         height: 79.2dvh;
-        background-image: url(/images/Rectangle\ 39265.png);
+        background-image: url('/images/Rectangle 39265.png');
         background-size: contain ;
         /* Change Background size to length for media queries 😋 */
 
@@ -860,7 +860,7 @@
     .contact-area a button {
         width: 250px;
         height: 80px;
-        background-image: url(/images/Rectangle\ 3698.png);
+        background-image: url('/images/Rectangle 3698.png');
         background-repeat: no-repeat;
         background-position: 100% 100%;
         /* border-right: 2px solid #fff;
@@ -899,7 +899,7 @@
     .contact-area .art .side-a {
         height: 55dvh;
         width: 7.5dvw;
-        background-image: url(/images/Vector\ \(3\).png);
+        background-image: url('/images/Vector (3).png');
         
         background-repeat: no-repeat;
         background-size: cover;
