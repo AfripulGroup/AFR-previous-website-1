@@ -52,7 +52,7 @@
         background-size: cover;
         display: flex;
         flex-direction: column;
-        gap: 4rem;
+        gap: 3rem;
         
     }
 
@@ -126,7 +126,8 @@
     .welcome_view_content {
         display: flex;
         flex-direction: column;
-        margin-left: 4rem;
+        width: 85dvw;
+        align-self: center;
         gap: 3rem;
     }
 
@@ -154,7 +155,7 @@
         line-height: 46px;
         letter-spacing: 0px;
         color: #DDDDDDCC;
-        margin-top: 4rem;
+        margin-top: .5rem;
 
 
     }
@@ -250,28 +251,41 @@
 
 /* Service Quote Box */
 
+
+    .service-quote-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        background: radial-gradient(35.46% 35.46% at 50% 50%, #000000 0%, #010101 100%);
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+
     .service-quote {
         /* height: 670px; */
         height: 83dvh;
-        width: 100%;
-        background: radial-gradient(35.46% 35.46% at 50% 50%, #000000 0%, #010101 100%);
-        border: 2px solid rgba(255, 255, 255, 1);
-        align-self: center;
+        width: 90%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr .9fr 1fr;
+        justify-content: center;
+        column-gap: 4%;
     }
 
     .service-quote .create {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 4rem;
+        justify-self: center;
+        gap: 2rem;
+        
     }
 
     .service-quote .brand {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 2rem;
         padding-left: 3rem;
         border-left: 2px solid rgba(255, 255, 255, 0.4);
         border-right: 2px solid rgba(255, 255, 255, 1);
@@ -283,7 +297,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 3rem;
+        gap: 2rem;
     }
 
 /* Moon Eclipse */
@@ -349,6 +363,7 @@
         height: 626vh;
         width: 100%;
         gap: 10dvh;
+        /* margin-top: 5dvh; */
         align-items: center;
         position: relative;
     }
@@ -360,7 +375,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 30vh;
+        margin-top: 17dvh;
         gap: 4rem;
     }
 
@@ -789,11 +804,11 @@
 
 /* ... */
 
-.triangle {
+/* .triangle {
     height: 761.514892578125px;
     width: 761.6610107421875px;
     background: linear-gradient(135deg, rgba(95, 133, 177, 0.1715) 49.85%, #ffffffd5  ,transparent 50%);
-}
+} */
    
 /* Contact us view */
 
@@ -801,11 +816,11 @@
         margin-top: 45dvh;
         display: flex;
         flex-direction: column;
-        gap: 20dvh;
+        gap: 17dvh;
         overflow: hidden;
         width: 100%;
         /* align-items: center;
-        justify-content: center; */
+        justify-content center; */
     }
 
     .contact-area-wrap .line {
