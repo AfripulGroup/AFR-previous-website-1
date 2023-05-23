@@ -1,4 +1,0 @@
-Add ring in brand divs 
-add image in contact us 
-change contact us button design on both page
-add border top to gfoo

@@ -453,7 +453,7 @@ a {
     
     .repositioned-quote-wrap {
         position: absolute;
-        top: 675dvh;
+        top: 685dvh;
         left: 7dvw;
         width: 20px;
         -webkit-transform: rotate(-90deg);
@@ -466,7 +466,7 @@ a {
 
     .repositioned-quote {
         
-        width: 190dvh;
+        width: 200dvh;
         height: 93px;
         display: flex;
         align-items: center;
@@ -481,13 +481,17 @@ a {
     }
 
     .repositioned-quote p{
-        margin: 0 20px;
+        margin: 0 2rem;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
         line-height: 90px;
         color: #939393;
+    }
+
+    .repositioned-quote .p1{
+        margin: 0 3rem;
     }
 
     .repositioned-quote hr {
@@ -500,13 +504,6 @@ a {
 
 /* Partners div styling  */
 
-    /* .partners-wrap {
-        display: grid;
-        width: 100%;
-        height: 1200px;
-        overflow: hidden;
-        
-    } */
     .partners-wrap {
         display: grid;
         grid-template: 1fr / 1fr;
@@ -539,15 +536,26 @@ a {
         height: 100dvh;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        /* gap: 2rem; */
         justify-content: space-around;
         align-items: center;
         text-align: center;
         background: #000000;
         backdrop-filter: blur(10px);
         overflow: hidden;
+        position: relative;
 
     }
+
+    .partners .image-abso {
+        position: absolute;
+        left: -10%;
+        top: 4%;
+    }
+
+    /* .partners .image-abso img{
+        max-width: 90%;
+    } */
 
     .partners .low-opa {
         font-family: 'Gobold';
@@ -563,6 +571,7 @@ a {
         opacity: 0.2;
         -webkit-text-stroke: 1px #fff;
         width: 400%;
+        margin-top: 2rem;
     }
 
     .partners .brands {
@@ -648,17 +657,16 @@ a {
         
     }
 
-
-
+/* ...  */
 
 
 /* Contact us view */
 
     .contact-area-wrap {
-        margin-top: 25dvh;
+        margin: 30dvh 0;
         display: flex;
         flex-direction: column;
-        gap: 17dvh;
+        gap: 14dvh;
         overflow: hidden;
         width: 100%;
         align-items: center;
@@ -674,9 +682,11 @@ a {
     .contact-area {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 80dvw;
+        width: 100dvw;
         margin: 0 5%;
         column-gap: 8dvw;
+        padding-left: 20dvw;
+        position: relative;
         
     }
 
@@ -719,16 +729,12 @@ a {
     .contact-area a button {
         width: 250px;
         height: 80px;
-        background-image: url('../images/Rectangle 3698.png');
-        background-repeat: no-repeat;
-        background-position: 100% 100%;
-        /* border-right: 2px solid #fff;
-        border-bottom: 2px solid #fff;
-        border-left: 2px solid #ffffff05;
-        border-top: 2px solid #ffffff26;
-        background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%); */
+        background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
         backdrop-filter: blur(9px);
-        transition: 100ms all ease;
+        border: 2px solid;
+        border-image-source: linear-gradient(261.01deg, #FFFFFF 48.65%, rgba(255, 255, 255, 0) 135.25%, rgba(255, 255, 255, 0.0713519) 135.25%);
+        border-image-slice: 1;
+        transition: 300ms all ease;
         cursor: pointer;
         font-family: 'Work Sans';
         font-style: normal;
@@ -738,12 +744,26 @@ a {
         /* or 100% */
         
         text-transform: uppercase;
-        
         color: #FFFFFF;
     }
 
     .contact-area a button:hover {
         background: linear-gradient(135deg, rgba(14, 95, 176, 0.256) 5.65%, rgba(58, 84, 113, 0.172) 94.35%); 
+        transition: 300ms all ease;
+    }
+
+    .contact-area .art {
+        position: absolute;
+        right: 5%;
+        height: 100%;
+        
+
+    }
+
+    .contact-area .art img {
+        width: 90%;
+        /* width: 45dvw; */
+        height: 99%;
     }
 
 
@@ -757,6 +777,8 @@ a {
         align-items: center;
         justify-content: center;
         width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 1);
+        margin-top: 20dvh;
     }
 
     .footer {
@@ -856,8 +878,6 @@ a {
     .footer .about form:hover {
         background-color: #000409;
         transition: 400ms all ease;
-        margin-left: 1px;
-        margin-top: 1px;
 
     }
 
