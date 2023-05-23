@@ -347,7 +347,6 @@
 
     .bodyContent-Container {
         background: rgba(5, 5, 5, 1);
-        /* padding-top: 5rem; */
 
     }
 
@@ -359,8 +358,7 @@
         background-repeat: no-repeat;
         height: 626vh;
         width: 100%;
-        gap: 10dvh;
-        /* margin-top: 5dvh; */
+        gap: 1.75%;
         align-items: center;
         position: relative;
     }
@@ -372,8 +370,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 17dvh;
+        margin-top: 15%;
         gap: 4rem;
+        height: 17.5%;
     }
 
 /*Services tab Headings Styling */
@@ -416,7 +415,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 660px;
+        height: 75dvh;
         width: 80dvw;
         border-radius: 12px;
         background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
@@ -541,8 +540,8 @@
         height: 60dvh;
         width: 80dvw;
         text-align: center;
-        margin-top: 41dvh;
-        margin-bottom: 3dvh;
+        margin-top: 22%;
+        margin-bottom: 1.5%;
         
     }
 
@@ -577,7 +576,7 @@
     
     .repositioned-quote-wrap {
         position: absolute;
-        top: 405dvh;
+        top: 65%;
         left: 7dvw;
         width: 20px;
         -webkit-transform: rotate(-90deg);
@@ -810,19 +809,19 @@
 /* Contact us view */
 
     .contact-area-wrap {
-        margin-top: 45dvh;
-        margin-bottom: 56.7dvh;
+        margin-top: 23.5%;
+        margin-bottom: 30%;
         display: flex;
         flex-direction: column;
         gap: 17dvh;
-        overflow: hidden;
         width: 100%;
         /* align-items: center;
         justify-content center; */
+        position: relative;
     }
 
     .contact-area-wrap .line {
-        width: 80dvw;
+        width: 85dvw;
         opacity: 0.2;
         align-self: center;
     }
@@ -831,8 +830,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 80dvw;
-        margin: 0 5%;
+        margin: 0 9%;
         column-gap: 8dvw;
+        position: relative;
         
     }
 
@@ -897,17 +897,11 @@
         transition: 300ms all ease;
     }
 
+   
 
 /* .... Extra */
 
-    .img-dropbelow {
-        position: absolute;
-        bottom: 0;
-        right: -2.7%;
-    }
-    .img-dropbelow img {
-        max-width: 85%;
-    }
+
 
 /* ... */
 
