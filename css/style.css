@@ -355,9 +355,9 @@
         display: flex;
         flex-direction: column;
         background-image: url('../images/Group 234 (3).png');
-        background-size: cover ;
+        background-size: 100% 108.5% ;
         background-repeat: no-repeat;
-        /* height: 626vh; */
+        height: 626vh;
         width: 100%;
         gap: 10dvh;
         /* margin-top: 5dvh; */
