@@ -211,7 +211,7 @@ a {
         width: 100%;
         align-items: center;   
         overflow: hidden;
-             
+        position: relative;    
     }
 
 
@@ -453,7 +453,7 @@ a {
     
     .repositioned-quote-wrap {
         position: absolute;
-        top: 685dvh;
+        top: 80%;
         left: 7dvw;
         width: 20px;
         -webkit-transform: rotate(-90deg);
@@ -827,6 +827,7 @@ a {
         flex-grow: 2;
         height: 100%;
         background-color: inherit;
+        color: #FFFF;
         outline: none;
         border: none;
     }
@@ -884,6 +885,7 @@ a {
     .footer .about form:focus-within {
        width: 42%;
        height: 58px;
+        color: #FFFF;
 
     }
 
@@ -916,12 +918,10 @@ a {
         line-height: 150%;
         /* identical to box height, or 30px */
         
-        
         /* black/black-100 */
         
         color: #FFFFFF;
         
-        color: #FFFFFF;
         list-style: none;
         display: flex;
         flex-direction: column;
