@@ -50,7 +50,6 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        
     }
 
 /* Header set up */
@@ -349,6 +348,14 @@
 
 /* ....... */
 
+/* ...Mobile Menu...  */
+
+    #hamburger-box, .hamburger {
+        display: none;
+    }
+
+/* ...  */
+
 /* Body Content.. Real deal 😁😁 */
 
     .bodyContent-Container {
@@ -362,7 +369,7 @@
         background-image: url('../images/Group 234 (3).png');
         background-size: 100% 108.5% ;
         background-repeat: no-repeat;
-        height: 626vh;
+        height: 636vh;
         width: 100%;
         gap: 1.75%;
         align-items: center;
@@ -378,7 +385,7 @@
         justify-content: center;
         margin-top: 15%;
         gap: 4rem;
-        height: 17.5%;
+        height: 150vh;
     }
 
 /*Services tab Headings Styling */
@@ -817,7 +824,7 @@
 
     .contact-area-wrap {
         margin-top: 23.5%;
-        margin-bottom: 30%;
+        margin-bottom: 29%;
         display: flex;
         flex-direction: column;
         gap: 17dvh;
@@ -1080,6 +1087,10 @@
     }
 
 /* ....End of Full view style */
+
+/* Media Queries  */
+
+/* Height 1440px */
 
     @media (min-height: 1440px) {
 
@@ -1525,3 +1536,338 @@
         }
     
     }
+
+
+/* Height 1005px */
+/* 
+    @media (min-height: 1005px) {
+
+        .first-view {
+            height: 250dvh;
+            gap: 6rem;
+        }
+
+        .header {
+            margin-top: 4rem;
+            gap: 10rem;
+        }
+
+        .logo {
+            margin-left: 8rem;
+        }
+
+        .nav {
+            margin-bottom: 30px;
+        }
+
+        .nav ul{
+            gap: 4rem;
+        }
+
+        .nav ul li{
+            font-size: 32px;
+        }
+
+        .nav ul .current .active a{
+            padding: 19px 0 15px 0;
+            color: #9EC0E0;
+    
+        }
+
+        .nav ul .current .active .indicator{
+            height: 4px;
+            width: 70px;
+        }
+
+        
+        .welcome_view_content {
+            width: 85dvw;
+            gap: 6rem;
+        }
+
+        .welcome_view_content .text_1 {
+            font-size: 200px;
+            line-height: 280px;
+            letter-spacing: -6px;
+            
+    
+        }
+
+    } */
+
+/* Width Media queries */
+
+
+/* Width 320px */
+
+@media only screen and (min-width: 320px) and (max-width: 1080px) {
+    .container_firstView {
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(35.46% 35.46% at 50% 50%, #000000 0%, #010101 100%);
+        overflow: hidden;
+    }
+
+    .first-view {
+        width: 100%;
+        height: 150dvh;
+        width: 100dvw;
+        background-position: center;
+        display: flex;
+        /* background-size: 100% 100%; */
+       
+    }
+
+/* Header set up */
+
+    .header {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        width: 85%;
+        gap: 0;
+        align-self: center;
+        justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
+    }
+    .logo {
+        display: flex;
+        z-index: 5;
+        margin: 0;
+       
+    }
+
+    .logo img {
+        height: 40px;
+        width: 90px;
+    }
+
+/* Mobile Menu */
+
+    .hamburger {
+        display: inline;
+        width: 2em;
+        height: 50px;
+        z-index: 5;
+    }
+    
+    .hamburger div {
+        width: 2em;
+        height: 5px;
+        border-radius: 3px;
+        background-color: #1095E0;
+        margin-top: 4.5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+   .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000409;
+        /* left: 0;
+        top: 0; */
+        top: -100%; left: 0; right: 0; bottom: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+
+   }
+
+   .nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.nav ul li{
+    font-size: 19px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+
+}
+
+.nav ul li:hover{
+    font-size: 20px;
+    transition: 100ms;
+}
+
+.nav ul .current .active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav ul .current .active a{
+    padding: 0;
+    color: #9EC0E0;
+
+}
+    
+   #hamburger-box:checked + .hamburger .top {
+        transform: rotate(-220deg);
+        margin-top: 20px;
+    }
+    #hamburger-box:checked + .hamburger .bottom {
+        opacity: 0;
+        transform: rotate(220deg);
+    }
+    #hamburger-box:checked + .hamburger .middle {
+        transform: rotate(220deg);
+        margin-top: -5px;
+    }
+    
+    #hamburger-box:checked + .hamburger + .nav {
+        top: 0;
+        transform: scale(1);
+    }
+
+
+/* Welcome View content */
+
+    .welcome_view_content {
+        display: flex;
+        flex-direction: column;
+        width: 85dvw;
+        align-self: center;
+        gap: .9rem;
+    }
+
+    .welcome_view_content .text_1 {
+        font-family: 'Gobold';
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 109%;
+        letter-spacing: -0.6px;
+        
+
+    }
+
+    .welcome_view_content .text_1 .text-1-sub {
+        color: #9EC0E0;
+
+    }
+
+    .welcome_view_content .text_2 {
+        font-family: 'Poppins', sans-serif;
+        height: 30px;
+        width: 205px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 12px;
+        color: #DDDDDDCC;
+        margin: .5rem 0;
+
+
+    }
+
+    .welcome_view_content .text_3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 4px;
+        font-weight: 400;
+        line-height: 9px;
+    }
+/* Floating divs */
+
+    .floating-display .float {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 2rem;
+        top: 83dvh;
+        gap: 8px;
+        height: 45px;
+        width: 70px;
+        border-radius: 3px;
+        background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
+        backdrop-filter: blur(9px);
+        box-shadow: 1px 0px 0 .5px #f5f0f0;
+        border-top: 1px solid #252f34;
+        border-left: 2px solid #3b4646;
+        
+    }
+
+    .floating-display .float1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 10.5%;
+        top: 15.5%;
+        gap: 8px;
+        height: 45px;
+        width: 70px;
+        border-radius: 3px;
+        background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
+        backdrop-filter: blur(9px);
+        box-shadow: .5px 0px 0 .5px #f5f0f0;
+        border-top: .5px solid #717980d8;
+        border-left: 1px solid #3b4646;
+        
+    }
+
+    .floating-display .float1 p {
+        font-family: 'Poppins';
+        font-size: 5px;
+        font-weight: 400;
+        line-height: 6px;
+        letter-spacing: 0px;
+        text-align: left;
+        height: 25px;
+        width: 57px;
+        color: #FFFFFFCC;
+
+        
+        
+    }
+
+    .floating-display .float .dot {
+        height: 14px;
+        width: 14px;
+        background: #696969;
+        /* position: sticky; */
+        margin-bottom: 6rem;
+        border-radius: 50%;
+        
+    }
+
+    .floating-display .float p {
+        height: 126px;
+        width: 287px;
+        letter-spacing: 0px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(255, 255, 255, 0.8);  
+    }
+
+    /* Body Content.. Real deal 😁😁 */
+
+
+    .body-content {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../images/Group 234 (3).png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 626vh;
+        width: 100%;
+        gap: 1.75%;
+        align-items: center;
+        position: relative;
+    }
+}
+ 
