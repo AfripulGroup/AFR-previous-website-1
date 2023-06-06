@@ -1680,6 +1680,7 @@
         overflow: hidden;
         transition: all 0.3s ease-in-out;
         transform: scale(0);
+        z-index: 4;
 
    }
 
@@ -1745,12 +1746,13 @@
         flex-direction: column;
         width: 85dvw;
         align-self: center;
-        gap: .9rem;
+        gap: .5rem;
+        margin-top: 1rem;
     }
 
     .welcome_view_content .text_1 {
         font-family: 'Gobold';
-        font-size: 45px;
+        font-size: 42px;
         font-weight: 400;
         line-height: 109%;
         letter-spacing: -0.6px;
@@ -1767,7 +1769,7 @@
         font-family: 'Poppins', sans-serif;
         height: 30px;
         width: 205px;
-        font-size: 10px;
+        font-size: 9px;
         font-weight: 400;
         line-height: 12px;
         color: #DDDDDDCC;
@@ -2350,7 +2352,7 @@
 /* Contact us view */
 
     .contact-area-wrap {
-        margin-top: 6rem;
+        margin-top: 70px;
         margin-bottom: 5rem;
         display: flex;
         flex-direction: column;
