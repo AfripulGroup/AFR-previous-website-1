@@ -369,7 +369,7 @@
         background-image: url('../images/Group 234 (3).png');
         background-size: 100% 108.5% ;
         background-repeat: no-repeat;
-        height: 636vh;
+        height: 320em;
         width: 100%;
         gap: 1.75%;
         align-items: center;
@@ -488,12 +488,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
 
-        /* width: 100px;
-        height: 100px; */
-        /* object-fit: fill;
-        object-position: 25% 25%; */
-        
+    .glass-frame-content .top-1{
+       margin-top: 1.3rem;
     }
 
     .glass-frame-content .word {
@@ -550,7 +548,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 6dvh;
+        gap: 3.5rem;
         height: 60dvh;
         width: 80dvw;
         text-align: center;
@@ -645,6 +643,7 @@
         grid-template: 1fr / 1fr;
         place-items: center;
         height: 96dvh;
+
     }
 
     .advertisement-designWrap > * {
@@ -1098,12 +1097,10 @@
 
 /* Height 1440px */
 
-    @media (min-height: 1440px) {
+    @media only screen and (min-height: 1640px) {
 
         .first-view {
-            
             gap: 9rem;
-            
         }
      
         .header  {
@@ -1285,7 +1282,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100%;
+            height: 130rem;
             width: 80dvw;
             border-radius: 12px;
             background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
@@ -1601,27 +1598,1504 @@
 
     } */
 
+
+
 /* Width Media queries */
 
-
-/* Width 320px */
-
-@media only screen and (min-width: 320px) and (max-width: 1080px) {
-    .container_firstView {
-        display: flex;
-        flex-direction: column;
-        background: radial-gradient(35.46% 35.46% at 50% 50%, #000000 0%, #010101 100%);
-        overflow: hidden;
-    }
+@media only screen and (max-width:1290px) {
 
     .first-view {
         width: 100%;
-        height: 150dvh;
+        height: 80em;
+        gap: 2rem;
+
+    }
+
+    /* Header set up */
+
+    .header {
+        margin-top: 1rem;
+        gap: 3.5rem;
+    }
+    .logo {
+        display: flex;
+        margin-left: 4rem;
+    }
+
+    .logo img {
+        height: 44px;
+        width: 105px;
+    }
+
+/* Navigation set up */
+
+    .nav {
+        margin-bottom: 15px;
+    }
+
+    .nav ul{
+        gap: 1rem;
+    }
+
+    .nav ul li{
+        font-size: 13px;
+    }
+
+
+    .nav ul .current .active .indicator{
+        height: 2px;
+        width: 26px;
+    }
+    
+    .nav ul .current .active a{
+        padding: 5.3px 0 5px 0;
+    }
+
+    .welcome_view_content {
+        gap: 2rem;
+    }
+
+    .welcome_view_content .text_1 {
+        font-family: 'Gobold';
+        font-size: 108px;
+        font-weight: 400;
+        line-height: 109%;
+        letter-spacing: -2px;
+    }
+
+    .welcome_view_content .text_2 {
+        height: 107px;
+        width: 650px;
+        font-size: 28px;
+        line-height: 42px;
+        margin-top: .3rem;
+    }
+
+    .welcome_view_content .text_3 {
+        font-size: 14px;
+        line-height: 42px;
+    }
+    
+/* Floating divs */
+
+    .floating-display .float {
+        right: 5rem;
+        top: 93dvh;
+        gap: 8px;
+        height: 160px;
+        width: 320px;
+        border-radius: 12px;
+        background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
+        backdrop-filter: blur(9px);
+        box-shadow: 1px 0px 0 .5px #f5f0f0;
+        border-top: 1px solid #252f34;
+        border-left: 2px solid #3b4646;
+        
+    }
+
+    .floating-display .float1 {
+        right: 11.5%;
+        top: 18.5%;
+        gap: 8px;
+        height: 160px;
+        width: 320px;
+        border-radius: 11px;
+    }
+
+    .floating-display .float1 p {
+        font-size: 15px;
+        line-height: 30px;
+        height: 106px;
+        width: 267px;
+    }
+
+    .floating-display .float .dot {
+        height: 14px;
+        width: 14px;
+        margin-bottom: 5.5rem;
+        border-radius: 50%;
+        
+    }
+
+    .floating-display .float p {
+        height: 116px;
+        width: 250px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .service-quote-wrap {
         width: 100dvw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .service-quote {
+        height: 40rem;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr .9fr 1fr;
+        column-gap: 4%;
+    }
+
+    .service-quote .create {
+        gap: 1.2rem;
+        
+    }
+
+    .service-quote .brand {
+        gap: 1.2rem;
+        padding: 0 2rem;
+        background: linear-gradient(345.54deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
+        backdrop-filter: blur(9px);
+    }
+
+    .service-quote .market {
+        gap: 1.2rem;
+    }
+
+/* Moon Eclipse */
+
+    .eclipse {
+        width: 83.4px;
+        height: 83.4px;
+        box-shadow: .9px .1px 1px .4px rgba(233, 232, 232, 0.975),  -.5px .8px 1px 0px rgba(231, 228, 228, 0.072);
+    }
+
+/* Service text styling*/
+
+    .service-quote .heading{
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .service-quote .text1-sub {
+        font-size: 17px;
+        line-height: 36px;
+        height: 161px;
+        width: 320px;
+    }
+
+    .body-content {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../images/Group 234 (3).png');
+        background-size: 100% 108.5% ;
+        background-repeat: no-repeat;
+        height: 320em;
+        width: 100%;
+        gap: 1.75%;
+        align-items: center;
+        position: relative;
+    }
+
+    .services {
+        margin-top: 15%;
+        gap: 3rem;
+        height: 56rem;
+    }
+
+/*Services tab Headings Styling */
+
+    .services .heading {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        text-align: center;
+    }
+
+    .services .heading .heading-subA {
+        font-size: 26px;
+        line-height: 62%;
+        letter-spacing: 15.5px;
+        
+    }
+
+    .services .heading .heading-subB {
+        font-size: 85px;
+        line-height: 110%;
+    }
+    
+    .glass-frame-content .p-one{
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .glass-frame-content .p-two{
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .glass-frame-content .image-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-position: 25% 25%;
+    }
+
+    .glass-frame-content img {
+        width: 130px;
+        height: 120px;
+    }
+
+    
+    .glass-frame-content .word {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-self: center;
+
+    }
+
+    /* Glass frame Button setup */
+
+    .glass-frame-content .button-container button{
+        width: 224px;
+        height: 67px;
+        border-radius: 5px;
+        font-size: 15px;
+        line-height: 100%;
+    }
+
+/* ... */
+
+    .body-content .who-we-are {
+        height: 30rem;
+        margin-top: 22rem;
+        margin-bottom: 1.5%;
+    }
+
+/* Side Quote */
+
+    .repositioned-quote-wrap {
+        position: absolute;
+        top: 65%;
+        left: 5.4dvw;
+        width: 18px;
+    }
+
+    .repositioned-quote {
+        width: 110rem;
+        height: 87px;
+    }
+
+    .repositioned-quote .gray-eclipse {
+        width: 13px;
+        height: 13px;
+    }
+
+    .repositioned-quote p{
+        margin: 0 16px;
+        font-size: 21px;
+        line-height: 84px;
+    }
+
+/* Advertisement Design */
+
+    .advertisement-designWrap {
+        height: 52rem;
+        margin: 2rem 0;
+    }
+
+    .advertisement-designWrap .dropDown-1 {
+        height: 27rem;
+        margin-bottom: 20rem;
+    }
+
+    .advertisement-designWrap .dropDown-2 {
+        height: 29rem;
+        margin-bottom: 25rem;
+    }
+
+    .advertisement-design {
+        display: grid;
+        grid-template-rows: 1fr .1fr .2fr;
+        height: 37rem;
+        background-image: url('../images/Rectangle 39265.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        border-top: 2px solid #ffffff92;
+        border-right: 2px solid #ffffff92;
+        z-index: 3;
+        backdrop-filter: blur(12px);
+    }
+
+/* Advertisement design image styling */
+
+    .advertisement-design .img-container img{
+        max-width: 95%;
+    }
+
+/* Advertisement design text/link styling */
+    
+    .advertisement-design .identity {
+        font-size: 19px;
+        line-height: 28px;
+        justify-content: start;
+        margin-left: 2.7%;
+    }
+
+    .advertisement-design .identity .company-name {
+        font-size: 24px;
+    }
+
+    .advertisement-design .link-CS a{
+        gap: 15px;
+        margin-right: 2.7%;
+        margin-bottom: 2%;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+/* ... */
+
+/* View our portfolio text styling */
+
+    .portfolio {
+        gap: 1.5rem;
+    }
+
+    .portfolio .text {
+        font-size: 76px;
+        line-height: 123%;
+        letter-spacing: -2px;
+    }
+    
+    .portfolio .redirect-portfolio {
+        font-size: 21px;
+        line-height: 16px;
+        /* or 83% */
+        gap: 6px;
+    }
+
+/* Contact us view */
+
+    .contact-area-wrap {
+        margin-top: 27.5%;
+        margin-bottom: 29%;
+        display: flex;
+        flex-direction: column;
+        gap: 17dvh;
+        width: 100%;
+    }
+
+    .contact-area {
+        width: 80dvw;
+        margin: 0 9%;
+        column-gap: 8dvw;
+        position: relative;
+        
+    }
+
+    .contact-area .contact-us {
+        gap: 30px;
+    }
+
+    .contact-area .goal {
+        font-size: 85px;
+        line-height: 132%;
+        /* or 126px */
+        letter-spacing: -2px;
+    }
+
+    .contact-area .goal .special {
+        -webkit-text-stroke: 1.5px #fff;
+    }
+
+    .contact-area .A-goal {
+        width: 500px;
+        font-size: 18px;
+        line-height: 167%;
+        /* or 40px */
+    }
+    
+    .contact-area a button {
+        width: 220px;
+        height: 70px;
+        border: 1.6px solid;
+        font-size: 17px;
+        line-height: 18px;
+        /* or 100% */
+    }
+
+    .footer .about .lorem {
+        font-size: 16px;
+        line-height: 150%;
+        /* or 30px */
+    }
+
+    .footer .about form {
+        gap: 5px;
+        padding: 0  10px;
+        width: 17rem;
+        height: 52px;
+        border-radius: 8px;
+    }
+
+    .footer .about form:focus-within {
+        width: 18rem;
+        height: 53px;
+        color: #FFFF;
+     }
+
+    .footer .about form input::placeholder {
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    .footer .about form button {
+        height: 21px;
+        width: 21px;
+        background-color: inherit;
+        font-size: 16px;
+    }
+
+    .footer .about .credit {
+        font-size: 10px;
+        line-height: 150%;
+        /* identical to box height, or 18px */
+    }
+
+ /* footer styling continue, end of about */
+
+    .footer .page-redirect, .footer .social-media-links, .footer .contact {
+        gap: 17px;
+    }
+
+    .footer .page-redirect p, .footer .social-media-links p, .footer .contact p {
+        font-size: 21px;
+        line-height: 100%;
+    }
+
+    .footer .page-redirect ul, .footer .social-media-links ul, .footer .contact ul {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+}
+
+@media only screen and (max-width:1080px) {
+    
+    .first-view {
+        width: 100%;
+        background-image: url('../images/Group 233.png') ;
+        background-repeat: no-repeat;
+        background-size: cover;
         background-position: center;
         display: flex;
-        /* background-size: 100% 100%; */
+        flex-direction: column;
+        gap: 2rem;
+        height: 70em;
+
+    }
+
+    .nav ul .current .active a{
+        padding: 9px 0 6px 0;
+    }
+
+    .welcome_view_content {
+        gap: 1rem;
+    }
+
+    .welcome_view_content .text_1 {
+        font-size: 85px;
+        letter-spacing: -1.5px;
+    }
+
+    .welcome_view_content .text_2 {
+        height: 80px;
+        width: 450px;
+        font-size: 21px;
+        line-height: 30px;
+        margin-top: .2rem;
+    }
+
+    .welcome_view_content .text_3 {
+        font-size: 10px;
+        line-height: 30px;
+    }
+
+ /* Floating divs */
+
+    .floating-display .float {
+        right: 4rem;
+        top: 91dvh;
+        gap: 5px;
+        height: 130px;
+        width: 270px;
+        border-radius: 10px;
+    }
+
+    .floating-display .float1 {
+        right: 9.5%;
+        top: 18.5%;
+        gap: 6px;
+        height: 130px;
+        width: 270px;
+        border-radius: 10px;
+    }
+
+    .floating-display .float1 p {
+        font-size: 12.5px;
+        line-height: 23px;
+        height: 88px;
+        width: 225px;
+    }
+
+    .floating-display .float .dot {
+        height: 10px;
+        width: 10px;
+        margin-bottom: 4rem;
+    }
+
+    .floating-display .float p {
+        height: 88px;
+        width: 225px;
+        font-size: 12.5px;
+        line-height: 23px;
+    }
+    
+/* Service Quote */
+
+    .service-quote {
+        height: 35rem;
+    }
+
+    .service-quote .create {
+        gap: 1rem;
+        
+    }
+
+    .service-quote .brand {
+        gap: 1rem;
+        padding: 0 1.5rem;
+    }
+
+    .service-quote .market {
+        gap: 1rem;
+    }
+
+/* Moon Eclipse */
+
+    .eclipse {
+        width: 63.4px;
+        height: 63.4px;
+    }
+
+    .service-quote .eclipse img {
+        width: 65%;
+    }
+
+/* Service text styling*/
+
+    .service-quote .heading{
+        font-size: 23px;
+        line-height: 42px;
+    }
+
+    .service-quote .text1-sub {
+        font-size: 12px;
+        line-height: 28px;
+        height: 130px;
+        width: 280px;
+    }
+
+/* Body content  */
+
+    .body-content {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../images/Group 234 (3).png');
+        background-size: 100% 108.5% ;
+        background-repeat: no-repeat;
+        height: 270em;
+        gap: 1.75%;
+    }
+
+    .services {
+        margin-top: 12rem;
+        gap: 3rem;
+        height: 49.5rem;
+    }
+
+/*Services tab Headings Styling */
+
+    .services .heading {
+        gap: 18px;
+    }
+
+    .services .heading .heading-subA {
+        font-size: 21px;
+        letter-spacing: 12.5px;
+        
+    }
+
+    .services .heading .heading-subB {
+        font-size: 70px;
+        line-height: 110%;
+    }
+
+/* Glass Frame Decoration */
+
+    .glass-frame-outer {
+        height: 31rem;
+        width: 80dvw;
+        border-radius: 12px;
+    }
+    
+    .glass-frame-content .p-one{
+        font-size: 13.5px;
+        line-height: 20px;
+    }
+
+    .glass-frame-content .p-two{
+        font-size: 11px;
+        line-height: 12px;
+    }
+
+    .glass-frame-content .image-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-position: 25% 25%;
+    }
+
+    .glass-frame-content img {
+        width: 100px;
+        height: 90px;
+    }
+
+    
+    .glass-frame-content .word {
+        gap: 8px;
+    }
+
+/* Glass frame Button setup */
+
+    .glass-frame-content .button-container button{
+        width: 190px;
+        height: 60px;
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 100%;
+    }
+    
+/* ... */
+
+/* Who We Are */
        
+    .body-content .who-we-are {
+        height: 30rem;
+        gap: 2rem;
+        margin-top: 22rem;
+        margin-bottom: 1.5%;
+    }
+
+    .body-content .who-we-are .intro {
+        font-size: 80px;
+        line-height: 131%;
+        /* or 131px */
+    }
+
+    .body-content .who-we-are .content {
+        font-size: 15px;
+        line-height: 158%;
+    }
+
+/* ... */
+
+/* Side Quote */
+
+    .repositioned-quote-wrap {
+        top: 70%;
+        left: 5.4dvw;
+        width: 15px;
+    }
+
+    .repositioned-quote {
+        width: 90rem;
+        height: 72px;
+    }
+
+    .repositioned-quote .gray-eclipse {
+        width: 11px;
+        height: 11px;
+    }
+
+    .repositioned-quote p{
+        margin: 0 12px;
+        font-size: 16px;
+        line-height: 72px;
+    }
+
+/* Advertisement Design */
+
+    .advertisement-designWrap {
+        height: 43rem;
+        margin: 1.5rem 0;
+    }
+
+    .advertisement-designWrap .dropDown-1 {
+        height: 24rem;
+        margin-bottom: 16rem;
+    }
+
+    .advertisement-designWrap .dropDown-2 {
+        height: 25rem;
+        margin-bottom: 20rem;
+    }
+
+    .advertisement-design {
+        display: grid;
+        grid-template-rows: 1fr .1fr .2fr;
+        height: 31rem;
+        background-image: url('../images/Rectangle 39265.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        border-top: 2px solid #ffffff92;
+        border-right: 2px solid #ffffff92;
+        z-index: 3;
+    }
+
+/* Advertisement design image styling */
+
+    .advertisement-design .img-container img{
+        max-width: 90%;
+    }
+
+/* Advertisement design text/link styling */
+    
+    .advertisement-design .identity {
+        font-size: 13px;
+        line-height: 21px;
+        margin-left: 5.2%;
+    }
+
+    .advertisement-design .identity .company-name {
+        font-size: 20px;
+    }
+
+    .advertisement-design .link-CS a{
+        gap: 7px;
+        margin-right: 5.2%;
+        margin-bottom: 2%;
+        font-size: 11.5px;
+        line-height: 13px;
+    }
+    
+/* ... */
+
+/* View our portfolio text styling */
+
+    .portfolio {
+        gap: .8rem;
+    }
+
+    .portfolio .text {
+        font-size: 45px;
+        line-height: 123%;
+        letter-spacing: -1px;
+    }
+    
+    .portfolio .redirect-portfolio {
+        font-size: 11px;
+        line-height: 83%;
+        gap: 4px;
+    }
+
+/* Contact us view */
+
+    .contact-area-wrap {
+        margin-top: 7.5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .contact-area .contact-us {
+        gap: 20px;
+    }
+
+    .contact-area .goal {
+        font-size: 62px;
+        line-height: 132%;
+        letter-spacing: -1.2px;
+    }
+
+    .contact-area .goal .special {
+        -webkit-text-stroke: 1.1px #fff;
+    }
+
+    .contact-area .A-goal {
+        width: 350px;
+        font-size: 14px;
+        line-height: 167%;
+    }
+    
+    .contact-area a button {
+        width: 170px;
+        height: 52px;
+        border: 1.3px solid;
+        font-size: 13px;
+        line-height: 100%;
+    }
+
+/* Footer */
+
+    .footer {
+        margin: 5.5rem 0;
+    }
+
+
+    .footer .about .lorem {
+        font-size: 12.5px;
+        line-height: 150%;
+    }
+
+    .footer .about form {
+        gap: 3px;
+        padding: 0 6px;
+        width: 14rem;
+        height: 42px;
+        border-radius: 5px;
+    }
+
+    .footer .about form:focus-within {
+        width: 15rem;
+        height: 43px;
+        font-size: 12px;
+     }
+
+    .footer .about form input::placeholder {
+        font-size: 10px;
+    }
+
+    .footer .about form button {
+        height: 16px;
+        width: 16px;
+        background-color: inherit;
+        font-size: 12px;
+    }
+
+    .footer .about .credit {
+        font-size: 8px;
+    }
+
+ /* footer styling continue, end of about */
+
+    .footer .page-redirect, .footer .social-media-links, .footer .contact {
+        gap: 13px;
+    }
+
+    .footer .page-redirect p, .footer .social-media-links p, .footer .contact p {
+        font-size: 17px;
+    }
+
+    .footer .page-redirect ul, .footer .social-media-links ul, .footer .contact ul {
+        font-size: 13px;
+        line-height: 150%;
+        gap: 15px;
+
+    } 
+}
+
+@media only screen and (max-width:950px) {
+
+    .first-view {
+        height: 60em;
+    }
+    
+    .logo img {
+        height: 30px;
+        width: 75px;
+    }
+
+/* Navigation set up */
+
+    .nav {
+        margin-bottom: 9px;
+    }
+
+    .nav ul{
+        gap: .7rem;
+    }
+
+    .nav ul li{
+        font-size: 9px;
+    }
+
+    .nav ul li:hover{
+        font-size: 9.5px;
+        padding-top: 4px;
+        transition: 300ms all ease ;
+    }
+
+    .nav ul .current .active .indicator{
+        height: 1.4px;
+        width: 16px;
+    }
+    
+    .nav ul .current .active a{
+        padding: 2.4px 0 2px 0;
+    }
+
+    .welcome_view_content {
+        gap: .8rem;
+    }
+
+    .welcome_view_content .text_1 {
+        font-size: 70px;
+        line-height: 109%;
+        letter-spacing: -1.5px;
+    }
+
+    .welcome_view_content .text_2 {
+        height: 70px;
+        width: 330px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: .3rem;
+    }
+
+    .welcome_view_content .text_3 {
+        font-size: 8px;
+        line-height: 20px;
+    }
+
+ /* Floating divs */
+
+    .floating-display .float {
+        right: 4rem;
+        top: 91dvh;
+        gap: 5px;
+        height: 95px;
+        width: 200px;
+        border-radius: 7px;
+    }
+
+    .floating-display .float1 {
+        right: 9.5%;
+        top: 18.5%;
+        gap: 5px;
+        height: 95px;
+        width: 200px;
+        border-radius: 7px;
+    }
+
+    .floating-display .float1 p {
+        font-size: 9.5px;
+        line-height: 17px;
+        height: 60px;
+        width: 170px;
+    }
+
+    .floating-display .float .dot {
+        height: 7px;
+        width: 7px;
+        margin-bottom: 2.7rem;
+    }
+
+    .floating-display .float p {
+        font-size: 9.5px;
+        line-height: 17px;
+        height: 60px;
+        width: 170px;
+    }
+   
+        
+/* Service Quote */
+
+    .service-quote {
+        height: 29rem;
+    }
+
+    .service-quote .create {
+        gap: .8rem;
+        
+    }
+
+    .service-quote .brand {
+        gap: .8rem;
+        padding: 0 1rem;
+    }
+
+    .service-quote .market {
+        gap: .8rem;
+    }
+
+/* Moon Eclipse */
+
+    .eclipse {
+        width: 43.4px;
+        height: 43.4px;
+    }
+
+    .service-quote .eclipse img {
+        width: 65%;
+    }
+
+/* Service text styling*/
+
+    .service-quote .heading{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+
+/* Body content  */
+
+
+    .body-content {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../images/Group 234 (3).png');
+        background-position: center;
+        background-size: 120%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 195em;
+        gap: 2rem;
+        align-items: center;
+        position: relative;
+    }
+
+    .services {
+        margin-top: 12rem;
+        gap: 2rem;
+        height: 42rem;
+    }
+
+/*Services tab Headings Styling */
+
+    .services .heading {
+        gap: 13px;
+    }
+
+    .services .heading .heading-subA {
+        font-size: 16px;
+        letter-spacing: 9.5px;
+        
+    }
+
+    .services .heading .heading-subB {
+        font-size: 47px;
+        line-height: 110%;
+    }
+
+/* Glass Frame Decoration */
+
+    .glass-frame-outer {
+        height: 28rem;
+        width: 80dvw;
+        border-radius: 12px;
+    }
+    
+    .glass-frame-content .p-one{
+        font-size: 11.5px;
+        line-height: 18px;
+    }
+
+    .glass-frame-content .p-two{
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .glass-frame-content img {
+        width: 80px;
+        height: 60px;
+    }
+
+    .glass-frame-content .word {
+        gap: 7px;
+    }
+
+/* Glass frame Button setup */
+
+    .glass-frame-content .button-container button{
+        width: 150px;
+        height: 45px;
+        border-radius: 4px;
+        font-size: 9.5px;
+    }
+    
+/* ... */
+
+/* Who We Are */
+       
+    .body-content .who-we-are {
+        height: 15rem;
+        gap: 1rem;
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+    }
+
+    .body-content .who-we-are .intro {
+        font-size: 45px;
+        line-height: 131%;
+        /* or 131px */
+    }
+
+    .body-content .who-we-are .content {
+        font-size: 10px;
+        line-height: 158%;
+    }
+
+/* ... */
+
+/* Side Quote */
+
+    .repositioned-quote-wrap {
+        top: 68%;
+        left: 5.4dvw;
+        width: 13px;
+    }
+
+    .repositioned-quote {
+        width: 70rem;
+        height: 30px;
+    }
+
+    .repositioned-quote .gray-eclipse {
+        width: 9px;
+        height: 9px;
+    }
+
+    .repositioned-quote p{
+        margin: 0 9px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+/* Advertisement Design */
+
+    .advertisement-designWrap {
+        height: 30rem;
+        margin: 1.5rem 0;
+    }
+
+    .advertisement-designWrap .dropDown-1 {
+        height: 20rem;
+        margin-bottom: 11rem;
+    }
+
+    .advertisement-designWrap .dropDown-2 {
+        height: 21rem;
+        margin-bottom: 15rem;
+    }
+
+    .advertisement-design {
+        display: grid;
+        grid-template-rows: 1fr .1fr .2fr;
+        height: 25rem;
+        background-image: url('../images/Rectangle 39265.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        border-top: 1px solid #ffffff92;
+        border-right: 1.5px solid #ffffff92;
+        z-index: 3;
+    }
+
+/* Advertisement design image styling */
+
+    .advertisement-design .img-container img{
+        max-width: 93%;
+    }
+
+/* Advertisement design text/link styling */
+    
+    .advertisement-design .identity {
+        font-size: 10px;
+        line-height: 15px;
+        margin-left: 3.2%;
+    }
+
+    .advertisement-design .identity .company-name {
+        font-size: 15px;
+    }
+
+    .advertisement-design .link-CS a{
+        gap: 5px;
+        margin-right: 3.2%;
+        margin-bottom: 2%;
+        font-size: 9px;
+        line-height: 9.5px;
+    }
+    
+/* ... */
+
+
+/* View our portfolio text styling */
+
+    .portfolio {
+        margin-top: 2rem;
+        gap: .5rem;
+    }
+
+    .portfolio .text {
+        font-size: 32px;
+        line-height: 123%;
+        letter-spacing: -.5px;
+    }
+    
+    .portfolio .redirect-portfolio {
+        font-size: 9.5px;
+        line-height: 83%;
+        gap: 3px;
+    }
+
+/* Contact us view */
+
+    .contact-area-wrap {
+        margin-top: 11.5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact-area .contact-us {
+        gap: 13px;
+    }
+
+    .contact-area .goal {
+        font-size: 47px;
+        line-height: 132%;
+        letter-spacing: -1px;
+    }
+
+
+
+    .contact-area .goal .special {
+        -webkit-text-stroke: .7px #fff;
+    }
+
+    .contact-area .A-goal {
+        width: 250px;
+        font-size: 10px;
+        line-height: 167%;
+    }
+    
+    .contact-area a button {
+        width: 130px;
+        height: 38px;
+        border: 1px solid;
+        font-size: 11px;
+        line-height: 100%;
+    }
+
+/* Footer */
+
+    .footer {
+        margin: 4rem 0;
+    }
+
+/* Footer About */
+
+    .footer .about {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer .about .lorem {
+        font-size: 10px;
+        line-height: 150%;
+    }
+
+    .footer .about form {
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        padding: 0 6px;
+        width: 13rem;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .footer .about form:focus-within {
+        width: 13.5rem;
+        height: 41px;
+        font-size: 10px;
+        transition: 600ms all ease;
+     }
+
+    .footer .about form input::placeholder {
+        font-size: 8px;
+    }
+
+    .footer .about form button {
+        height: 10px;
+        width: 10px;
+        background-color: inherit;
+        font-size: 10px;
+    }
+
+    .footer .about .credit {
+        font-size: 7px;
+    }
+
+ /* footer styling continue, end of about */
+
+    .footer .page-redirect, .footer .social-media-links, .footer .contact {
+        gap: 10px;
+    }
+
+    .footer .page-redirect p, .footer .social-media-links p, .footer .contact p {
+        font-size: 14px;
+    }
+
+    .footer .page-redirect ul, .footer .social-media-links ul, .footer .contact ul {
+        font-size: 10px;
+        line-height: 150%;
+        gap: 10px;
+    } 
+
+    
+}
+
+@media only screen and (max-width:800px) {
+
+    body {
+        background-color: #050505;
+    }
+
+    .first-view {
+        height: 90em;
+        gap: 7rem;
+    }
+
+    .header {
+        margin-top: 2.5rem;
+    }
+
+    .welcome_view_content {
+        gap: 1.5rem;
+    }
+
+    .welcome_view_content .text_1 {
+        font-size: 85px;
+    }
+
+    .welcome_view_content .text_2 {
+        height: 60px;
+        width: 310px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 0;
+    }
+
+    .welcome_view_content .text_3 {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .floating-display .float1 {
+       right: 9.5%;
+        top: 8rem;
+    }
+    
+    .floating-display .float {
+        right: 4rem;
+        top: 47em;
+        gap: 5px;
+        height: 95px;
+        width: 200px;
+        border-radius: 7px;
+    }
+
+    
+    .service-quote .text1-sub {
+        width: 200px;
+    }
+
+    .service-quote .brand {
+        padding: 0 1.5rem;
+    }
+
+/* Body content  */
+
+    .body-content {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../images/Group 234 (3).png');
+        background-position: center;
+        background-size: 120%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 170.5em;
+        gap: 2rem;
+        align-items: center;
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    .services {
+        margin-top: 6rem;
+        gap: 2rem;
+        height: 32rem;
+    }
+
+          
+    .body-content .who-we-are {
+        gap: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .services .heading {
+        gap: 10px;
+    }
+
+    .services .heading .heading-subA {
+        font-size: 14px;
+        letter-spacing: 5.5px;
+        
+    }
+
+    .services .heading .heading-subB {
+        font-size: 42px;
+        line-height: 110%;
+    }
+
+    .glass-frame-outer {
+        height: 21rem;
+        width: 80dvw;
+        border-radius: 12px;
+    }
+
+    .repositioned-quote-wrap {
+        top: 65%;
+        width: 13px;
+    }
+
+    .repositioned-quote {
+        width: 65rem;
+        height: 25px;
+    }
+
+    .contact-area-wrap {
+        margin-top: 11.2rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+}
+
+/* Next media queries */
+ 
+@media only screen and (max-width:730px) {
+   
+    .first-view {
+        gap: 2rem;
     }
 
 /* Header set up */
@@ -1636,6 +3110,7 @@
         justify-content: space-between;
         font-family: 'Poppins', sans-serif;
     }
+
     .logo {
         display: flex;
         z-index: 5;
@@ -1645,25 +3120,50 @@
 
     .logo img {
         height: 40px;
-        width: 90px;
+        width: 100px;
     }
 
 /* Mobile Menu */
 
     .hamburger {
-        display: inline;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 2em;
-        height: 50px;
+        height: 40px;
         z-index: 5;
     }
     
     .hamburger div {
-        width: 2em;
+        width: 1.7em;
         height: 5px;
-        border-radius: 3px;
-        background-color: #1095E0;
-        margin-top: 4.5px;
+        border-radius: 5px;
+        background-color: #0770ad;
+        margin-top: 2px;
         transition: all 0.3s ease-in-out;
+    }
+
+        
+   #hamburger-box:checked + .hamburger .top {
+        transform: rotate(-410deg);
+        margin-top: 20px;
+        width: 1.8em;
+    }
+    #hamburger-box:checked + .hamburger .bottom {
+        opacity: 0;
+        transform: rotate(410deg);
+        width: 1.8em;
+    }
+    #hamburger-box:checked + .hamburger .middle {
+        transform: rotate(410deg);
+        margin-top: -5px;
+        width: 1.8em;
+    }
+    
+    #hamburger-box:checked + .hamburger + .nav {
+        top: 0;
+        transform: scale(1);
     }
 
    .nav {
@@ -1674,8 +3174,6 @@
         width: 100%;
         height: 100%;
         background-color: #000409;
-        /* left: 0;
-        top: 0; */
         top: -100%; left: 0; right: 0; bottom: 0;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
@@ -1685,139 +3183,671 @@
    }
 
    .nav ul{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-}
-
-.nav ul li{
-    font-size: 19px;
-    font-weight: 600;
-    transition: all 0.3s ease-in-out;
-    transition: color 0.2s ease-in-out;
-    letter-spacing: 1px;
-
-}
-
-.nav ul li:hover{
-    font-size: 20px;
-    transition: 100ms;
-}
-
-.nav ul .current .active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.nav ul .current .active a{
-    padding: 0;
-    color: #9EC0E0;
-
-}
-    
-   #hamburger-box:checked + .hamburger .top {
-        transform: rotate(-220deg);
-        margin-top: 20px;
-    }
-    #hamburger-box:checked + .hamburger .bottom {
-        opacity: 0;
-        transform: rotate(220deg);
-    }
-    #hamburger-box:checked + .hamburger .middle {
-        transform: rotate(220deg);
-        margin-top: -5px;
-    }
-    
-    #hamburger-box:checked + .hamburger + .nav {
-        top: 0;
-        transform: scale(1);
-    }
-
-
-/* Welcome View content */
-
-    .welcome_view_content {
         display: flex;
         flex-direction: column;
-        width: 85dvw;
-        align-self: center;
-        gap: .5rem;
-        margin-top: 1rem;
+        gap: 1.5rem;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+    }
+    
+    .nav ul li{
+        font-size: 22px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        transition: color 0.2s ease-in-out;
     }
 
-    .welcome_view_content .text_1 {
-        font-family: 'Gobold';
-        font-size: 42px;
-        font-weight: 400;
-        line-height: 109%;
-        letter-spacing: -0.6px;
+    .nav ul li:hover{
+        font-size: 23px;
+        transition: 100ms;
+    }
+
+    .nav ul .current .active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         
-
     }
 
-    .welcome_view_content .text_1 .text-1-sub {
+    .nav ul .current .active a{
+        padding: 0;
         color: #9EC0E0;
 
     }
 
+    .nav ul .current .active {
+        gap: 2px;
+    }
+    .nav ul .current .active .indicator{
+        height: 2.7px;
+        width: 40px;
+    }
+    
+ /* Welcome View content */
+
+    .welcome_view_content {
+        gap: 1.4rem;
+        margin-top: 4rem;
+    }
+
+    .welcome_view_content .text_1 {
+        font-size: 77px;
+        letter-spacing: -1px;
+    }
+
     .welcome_view_content .text_2 {
-        font-family: 'Poppins', sans-serif;
-        height: 30px;
-        width: 205px;
-        font-size: 9px;
-        font-weight: 400;
-        line-height: 12px;
-        color: #DDDDDDCC;
-        margin: .5rem 0;
-
-
+        height: 60px;
+        width: 350px;
+        font-size: 15px;
+        line-height: 142%;
+        margin: 0;
     }
 
     .welcome_view_content .text_3 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 4px;
+        font-size: 8px;
         font-weight: 400;
-        line-height: 9px;
+        line-height: 10px;        
+        line-height: 5px;
     }
+
+    
+    .floating-display .float1 {
+         right: 6.5%;
+         top: 8rem;
+     }
+     
+     .floating-display .float {
+         right: 4rem;
+         top: 42em;
+         gap: 5px;
+         height: 95px;
+         width: 200px;
+         border-radius: 7px;
+     }
+ 
+    .service-quote .heading{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    
+    .service-quote {
+        height: 24rem;
+    }
+
+     .service-quote .text1-sub {
+        font-size: 10px;
+        line-height: 23px;
+        height: 130px;
+        width: 170px;
+    }
+ 
+     .service-quote .brand {
+         padding: 0 1.5rem;
+     }
+
+     
+    .body-content {
+        height: 155em;
+        gap: 2rem;
+        align-items: center;
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    .services .heading {
+        gap: 10px; 
+    }
+
+    .services .heading .heading-subA {
+        font-size: 12px;
+        letter-spacing: 7px;
+        
+    }
+
+    .services .heading .heading-subB {
+        font-size: 37px;
+        line-height: 110%;
+    }
+
+/* Glass Frame Decoration */
+
+    .glass-frame-outer {
+        height: 21rem;
+        width: 75dvw;
+        border-radius: 10px;
+    }
+    
+    .glass-frame-content .p-one{
+        font-size: 9.5px;
+        line-height: 10px;
+    }
+
+    .glass-frame-content .p-two{
+        font-size: 7px;
+        line-height: 5px;
+    }
+
+    .glass-frame-content img {
+        width: 40px;
+        height: 30px;
+    }
+
+    .glass-frame-content .word {
+        gap: 5px;
+    }
+
+    .glass-frame-content .top-1 {
+        margin-top: 0.3rem;
+    }
+
+/* Glass frame Button setup */
+
+    .glass-frame-content .button-container button{
+        width: 110px;
+        height: 33px;
+        border-radius: 4px;
+        font-size: 7px;
+    }
+    
+/* ... */
+
+/* Who We Are */
+       
+    .body-content .who-we-are {
+        gap: .5rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        height: 13rem;
+
+    }
+
+    .body-content .who-we-are .intro {
+        font-size: 41px;
+        line-height: 131%;
+        /* or 131px */
+    }
+
+    .body-content .who-we-are .content {
+        font-size: 9px;
+        line-height: 158%;
+    }
+
+/* ... */
+
+/* Advertisement Design */
+
+    .advertisement-designWrap {
+        height: 25rem;
+        margin: 1.5rem 0;
+    }
+
+    .advertisement-designWrap .dropDown-1 {
+        height: 17rem;
+        margin-bottom: 11rem;
+    }
+
+    .advertisement-designWrap .dropDown-2 {
+        height: 19rem;
+        margin-bottom: 15rem;
+    }
+
+    .advertisement-design {
+        height: 22rem;
+        z-index: 3;
+    }
+
+/* Advertisement design image styling */
+
+    .advertisement-design .img-container img{
+        max-width: 93%;
+    }
+
+/* Advertisement design text/link styling */
+    
+    .advertisement-design .identity {
+        font-size: 9.5px;
+        line-height: 15px;
+    }
+
+    .advertisement-design .identity .company-name {
+        font-size: 12px;
+    }
+
+    .advertisement-design .link-CS a{
+        gap: 5px;
+        margin-right: 3.2%;
+        margin-bottom: 2%;
+        font-size: 8px;
+        line-height: 6.5px;
+    }
+    
+/* ... */
+
+
+
+
+/* View our portfolio text styling */
+
+    .portfolio {
+        gap: .5rem;
+    }
+
+    .portfolio .text {
+        font-size: 31px;
+        line-height: 123%;
+        letter-spacing: -1.5px;
+    }
+
+    .portfolio .redirect-portfolio {
+        font-size: 10px;
+        line-height: 83%;
+        gap: 4px;
+    }
+
+ /* Contact us view */
+
+    .contact-area .goal {
+        font-size: 43px;
+        line-height: 132%;
+        letter-spacing: -1px;
+    }
+
+    .contact-area .goal .special {
+        -webkit-text-stroke: .5px #fff;
+    }
+
+    .contact-area .A-goal {
+        width: 210px;
+        font-size: 9px;
+        line-height: 167%;
+    }
+    
+    .contact-area a button {
+        width: 110px;
+        height: 33px;
+        border: 1px solid;
+        font-size: 9px;
+        line-height: 100%;
+    }
+
+/* Footer styling */
+
+       footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
+        gap: 40px;
+       font-size: unset;
+    }
+
+/* Footer About */
+
+    .footer .about {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer .about .lorem {
+        font-size: 17px;
+        line-height: 150%;
+    }
+
+    .footer .about form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        padding: 0  15px;
+        width: 20rem;
+        height: 60px;
+        border: 1px solid #c7c3c3;
+        border-radius: 7px;
+    }
+
+    .footer .about form input::placeholder {
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    .footer .about form button {
+        height: 24px;
+        width: 24px;
+        font-size: 20px;
+
+    }
+
+    .footer .about form:focus-within {
+       width: 21rem;
+       height: 61px;
+       font-size: unset;
+    }
+
+/* footer styling continue, end of about */
+
+    .footer .page-redirect, .footer .social-media-links, .footer .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    .footer .page-redirect p, .footer .social-media-links p, .footer .contact p {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .footer .page-redirect ul, .footer .social-media-links ul, .footer .contact ul {
+        font-size: 15px;
+        line-height: 150%;
+        gap: 15px;
+    }
+    
+    .footer .credit {
+        font-size: 10px;
+        line-height: 150%;
+        color: #FFFFFF;
+        opacity: 0.6; 
+    }
+
+    .footer .about .credit {
+        display: none;
+    }
+
+    .footer .second-credit {
+        display: inline; 
+    }
+}
+
+@media only screen and (max-width:640px) {
+ /* Welcome View content */
+
+    .welcome_view_content {
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .welcome_view_content .text_1 {
+        font-size: 65px;
+        letter-spacing: -1px;
+    }
+
+    .welcome_view_content .text_2 {
+        height: 50px;
+        width: 250px;
+        font-size: 11px;
+        line-height: 142%;
+        margin: 0;
+    }
+
+    .welcome_view_content .text_3 {
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 0;
+    }
+
+    
+    .hamburger {
+        width: 1.7em;
+        height: 40px;
+    }
+    
+    .hamburger div {
+        width: 1.5em;
+        height: 5px;
+        margin-top: 2px;
+    }
+
+        
+   #hamburger-box:checked + .hamburger .top {
+        margin-top: 10px;
+        width: 1.6em;
+    }
+    #hamburger-box:checked + .hamburger .bottom {
+        opacity: 0;
+        width: 1.6em;
+    }
+    #hamburger-box:checked + .hamburger .middle {
+        transform: rotate(410deg);
+        margin-top: -5px;
+        width: 1.6em;
+    }
+
+    .nav ul li{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    .nav ul li:hover{
+        font-size: 21px;
+        transition: 200ms;
+    }
+       
+    .body-content {
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150em;
+        gap: 1.5rem;
+        align-items: center;
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    .repositioned-quote-wrap {
+        top: 65%;
+        width: 13px;
+    }
+
+    .repositioned-quote {
+        width: 50rem;
+        height: 25px;
+    }
+
+    
+    .repositioned-quote .gray-eclipse {
+        width: 9px;
+        height: 9px;
+    }
+
+    .repositioned-quote p{
+        margin: 0 9px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    
+    .contact-area-wrap {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer {
+        gap: 2rem;
+    }
+
+    .footer .about .lorem {
+        font-size: 13px;
+        line-height: 150%;
+    }
+
+    .footer .about form {
+        gap: 4px;
+        padding: 0  15px;
+        width: 12rem;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .footer .about form input::placeholder {
+        font-size: 10px;
+        line-height: 150%;
+    }
+
+    .footer .about form button {
+        display: flex;
+        height: 100%;
+        width: 14px;
+        font-size: 11px;
+    }
+
+    .footer .about form:focus-within {
+       width: 13.5rem;
+       height: 41px;
+    }
+
+/* footer styling continue, end of about */
+
+    .footer .page-redirect, .footer .social-media-links, .footer .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+
+    .footer .page-redirect p, .footer .social-media-links p, .footer .contact p {
+        font-size: 15px;
+        line-height: 100%;
+    }
+
+    .footer .page-redirect ul, .footer .social-media-links ul, .footer .contact ul {
+        font-size: 11px;
+        line-height: 150%;
+        gap: 10px;
+    }
+
+    .footer .credit {
+        text-align: center;
+        font-size: 10px;
+        line-height: 150%;
+        color: #FFFFFF;
+        opacity: 0.6; 
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width:540px)  {
+   
+    .first-view {
+        height: 70em;
+        gap: 0rem;
+    }
+
+    .logo img {
+        height: 25px;
+        width: 70px;
+    }
+
+    .hamburger {
+        display: inline;
+        width: 1em;
+        height: 15px;
+        z-index: 5;
+    }
+    
+    .hamburger div {
+        width: 1em;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #1095E0;
+        margin-top: 1px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .nav ul li{
+        font-size: 15px;
+        letter-spacing: 1.5px;
+    }
+
+    .nav ul li:hover{
+        font-size: 16px;
+    }
+
+    .nav ul{
+        gap: 1rem;
+    }
+
+    .nav ul .current .active {
+        gap: 2x;
+    }
+    .nav ul .current .active .indicator{
+        height: 2px;
+        width: 30px;
+    }
+    
+   #hamburger-box:checked + .hamburger .top {
+        transform: rotate(-405deg);
+        margin-top: 3px;
+        width: 1.1em;
+    }
+    #hamburger-box:checked + .hamburger .bottom {
+        opacity: 0;
+        transform: rotate(405deg);
+        width: 1.1em;
+    }
+    #hamburger-box:checked + .hamburger .middle {
+        transform: rotate(405deg);
+        margin-top: -3px;
+        width: 1.1em;
+    }
+
+/* Welcome View content */
+
+     .welcome_view_content {
+        gap: .8rem;
+        margin-top: 2.5rem;
+    }
+
+    .welcome_view_content .text_1 {
+        font-size: 50px;
+        letter-spacing: -1px;
+    }
+
+    .welcome_view_content .text_2 {
+        height: 50px;
+        width: 240px;
+        font-size: 11px;
+        line-height: 142%;
+    }
+
+    .welcome_view_content .text_3 {
+        font-size: 6px;
+        line-height: 10px;        
+    }
+
 /* Floating divs */
 
     .floating-display .float {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
         right: 2rem;
-        top: 83dvh;
+        top: 30rem;
         gap: 3px;
-        height: 45px;
-        width: 70px;
+        height: 52px;
+        width: 100px;
         border-radius: 4px;
-        background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
-        backdrop-filter: blur(9px);
-        box-shadow: .5px 0px 0 .5px #f5f0f0;
+         box-shadow: .5px 0px 0 .5px #f5f0f0;
         border-top: 1px solid #252f34;
         border-left: 1px solid #3b4646;
         
     }
 
     .floating-display .float1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 10.5%;
-        top: 15.5%;
-        gap: 8px;
-        height: 45px;
-        width: 70px;
-        border-radius: 3px;
-        background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
-        backdrop-filter: blur(9px);
+        right: 5.5rem;
+        top: 5rem;
+        gap: 6px;
+        height: 52px;
+        width: 100px;
+        border-radius: 4px;
         box-shadow: 1px 0px 0 0px #f5f0f0, 0px -.5px 0 0px #f5f0f0, 0px .5px 0 0px #f5f0f0;
         border-top: .5px solid #717980d8;
         border-left: 1px solid #3b4646;
@@ -1825,18 +3855,10 @@
     }
 
     .floating-display .float1 p {
-        font-family: 'Poppins';
-        font-size: 4.5px;
-        font-weight: 400;
-        line-height: 7px;
-        letter-spacing: 0px;
-        text-align: left;
-        height: 35px;
-        width: 57px;
-        color: #FFFFFFCC;
-
-        
-        
+        font-size: 6px;
+        line-height: 9px;
+        height: 43px;
+        width: 82px;
     }
 
     .floating-display .float .dot {
@@ -1844,26 +3866,20 @@
         width: 5px;
         background: #696969;
         position: relative;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
         justify-self: start;
         border-radius: 50%;
         
     }
 
     .floating-display .float p {
-        font-family: 'Poppins';
-        font-size: 4.3px;
-        font-weight: 400;
-        line-height: 6.5px;
-        letter-spacing: 0px;
-        text-align: left;
-        height: 32px;
-        width: 56px;
-        color: rgba(255, 255, 255, 0.8);  
+        font-size: 6px;
+        line-height: 8px;
+        height: 40px;
+        width: 82px;
     }
 
 /* Service Quote Box */
-
 
     .service-quote-wrap {
         width: 100%;
@@ -1876,15 +3892,13 @@
     }
 
     .service-quote {
-        /* height: 670px; */
-        height: auto;
+        height: 24rem;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
         padding: 1rem 0;
-        /* column-gap: 4%; */
         background: linear-gradient(345.54deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
         backdrop-filter: blur(2px);
     }
@@ -1892,9 +3906,8 @@
     .service-quote .create {
         display: grid;
         grid-template: 2 / 2;
-        grid-template-columns: .25fr 1fr;
+        grid-template-columns: .2fr 1fr;
         gap: .75rem 0;
-        /* column-gap: 0; */
         align-items: center;
         justify-content: unset;
         margin-left: 10%;
@@ -1904,9 +3917,8 @@
     .service-quote .brand {
         display: grid;
         grid-template: 2 / 2;
-        grid-template-columns: .22fr 1fr;
+        grid-template-columns: .2fr 1fr;
         gap: .75rem 0;
-        /* column-gap: 0; */
         align-items: center;
         justify-content: unset;
         padding-left: 20%;
@@ -1921,9 +3933,8 @@
     .service-quote .market {
         display: grid;
         grid-template: 2 / 2;
-        grid-template-columns: .25fr 1fr;
+        grid-template-columns: .2fr 1fr;
         gap: .75rem 0;
-        /* column-gap: 0; */
         align-items: center;
         justify-content: unset;
         margin-left: 30%;
@@ -1945,10 +3956,6 @@
         background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
         backdrop-filter: blur(9px);
         border-radius: 50%;
-        /* z-index: 3;
-        border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
-        border-width: 4px;
-        border-style: solid; */
         box-shadow: .9px .1px 1px .4px rgba(233, 232, 232, 0.975),  -.5px .8px 1px 0px rgba(231, 228, 228, 0.072);
         
     }
@@ -1957,11 +3964,12 @@
         width: 60%;
     }
 
+
 /* Service text styling*/
 
     .service-quote .heading{
         font-family: 'Gobold';
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 400;
         line-height: 142%;
         letter-spacing: 0px;
@@ -1972,77 +3980,20 @@
 
     .service-quote .text1-sub {
         font-family: 'Poppins';
-        font-size: 8px;
+        font-size: 9px;
         font-weight: 500;
         line-height: 208%;
         letter-spacing: 0px;
         text-align: left;
         color: rgba(221, 221, 221, 0.8);
-        height: 51px;
+        height: 57px;
         width: 252px;
     }
 
-/* Body Content.. Real deal 😁😁 */
-
-
-    .body-content {
-        display: flex;
-        flex-direction: column;
-        background-image: url('../images/Group 234 (3).png');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 260vh;
-        width: 100%;
-        gap: 2rem;
-        align-items: center;
-        position: relative;
-
-    }
-
-    /* Services Tab Styling */
-
     .services {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         margin-top: 6rem;
-        gap: 1.5rem;
-        height: fit-content;
-    }
-
-/*Services tab Headings Styling */
-
-    .services .heading {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        text-align: center;
-    }
-
-    .services .heading .heading-subA {
-        font-family: 'Josefin Sans', sans-serif;
-        text-transform: uppercase;
-        font-size: 6px;
-        font-weight: 500;
-        line-height: 4px;
-        letter-spacing: 5px;
-        
-    }
-
-    .services .heading .heading-subB {
-        font-family: 'Gobold';
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 117%;
-        text-align: center;
-        background: linear-gradient(180deg, #FFFFFF 0%, rgba(242, 242, 242, 0) 134.19%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
+        gap: 2rem;
+        height: 35rem;
     }
 
 /* Glass Frame Decoration */
@@ -2051,9 +4002,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: fit-content;
+        height: 26rem;
         width: 80dvw;
-        padding: 15px 0;
         border-radius: 12px;
         background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
         backdrop-filter: blur(9px);
@@ -2068,14 +4018,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: fit-content;
+        height: 23rem;
         width: 92%;
-        padding: 15px 0;
     }
 
     .glass-frame-content {
         width: 95%;
-        height: 88.5%;
+        height: 22rem;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: .1fr 1fr;
@@ -2086,7 +4035,7 @@
 
     .glass-frame-content .p-one{
         font-family: 'Work Sans', sans-serif;
-        font-size: 10px;
+        font-size: 13px;
         font-weight: 500;
         line-height: 130%;
         letter-spacing: 0em;
@@ -2096,19 +4045,16 @@
 
     .glass-frame-content .p-two{
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 8px;
+        font-size: 8.5px;
         font-weight: 400;
         line-height: 100%;
-        letter-spacing: 0px;
         text-align: left;
-        
-        
     }
 
     .glass-frame-content .image-icon {
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: start;
         grid-column: 1 span 1;
     }
 
@@ -2121,10 +4067,14 @@
     }
 
     .glass-frame-content img {
-        width: 40px;
-        height: 35px;
+        width: 50px;
+        height: 45px;
         object-fit: contain;
-        object-position: 30%;
+        object-position: 40%;
+    }
+
+    .glass-frame-content  .pad-left {
+        padding-left: 5px;
     }
 
 /* Glass frame Button setup */
@@ -2137,8 +4087,8 @@
     }
 
     .glass-frame-content .button-container button{
-        width: 75px;
-        height: 25px;
+        width: 105px;
+        height: 35px;
         background: linear-gradient(185.03deg, rgba(255, 255, 255, 0.51) -43.03%, rgba(217, 217, 217, 0) 127.98%, rgba(255, 255, 255, 0) 127.98%);
         border: 0.615213px solid #FFFFFF;
         backdrop-filter: blur(4.61409px);
@@ -2147,7 +4097,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
-        font-size: 5.5px;
+        font-size: 7px;
         line-height: 100%;
         text-align: center;
         cursor: pointer;
@@ -2159,169 +4109,69 @@
     }
 /* ... */
 
+  .body-content {
+        height: 145em;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+
 /* Who We Are */
+       
+    .body-content .who-we-are {
+        gap: .3rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        height: 10rem;
 
-.body-content .who-we-are {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    height: fit-content;
-    width: 80dvw;
-    text-align: center;
-    margin-top: 2.5rem;
-    margin-bottom: 0;
-    
-}
-
-.body-content .who-we-are .intro {
-    font-family: 'Gobold';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 131%;
-    /* or 131px */
-    
-}
-
-.body-content .who-we-are .content {
-    width: 100%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 5px;
-    line-height: 158%;
-}
-/* ... */
-
-/* Side Quote */
-
-    .repositioned-quote-wrap {
-        position: absolute;
-        top: 59.5%;
-        left: 2dvw;
-        width: 20px;
     }
 
-    .repositioned-quote {
-        width: 50dvh;
-        height: 33px;
-        display: flex;
-        align-items: center;
-        /* gap: 10px; */
+    .body-content .who-we-are .intro {
+        font-size: 35px;
+        line-height: 131%;
+        /* or 131px */
     }
 
-    .repositioned-quote .gray-eclipse {
-        width: 6px;
-        height: 6px;
-        background: #A4A4A4;
-        border-radius: 50%;
-    }
-
-    .repositioned-quote p{
-        margin: 0 5px;
-        font-size: 5px;
-        line-height: 375%;
+    .body-content .who-we-are .content {
+        font-size: 8px;
+        line-height: 158%;
     }
 
 /* Advertisement Design */
 
     .advertisement-designWrap {
-        display: grid;
-        grid-template: 1fr / 1fr;
-        place-items: center;
-        height: fit-content;
-        margin-top: 5rem;
-    }
-
-    .advertisement-designWrap > * {
-        grid-column: 1 / 1;
-        grid-row: 1 / 1;
+        height: 20rem;
+        margin: 1.5rem 0;
     }
 
     .advertisement-designWrap .dropDown-1 {
-        height: 12rem;
-        width: 69dvw;
-        border-radius: 12px;
-        margin-bottom: 4rem;
-        backdrop-filter: blur(5px);
+        height: 13rem;
+        margin-bottom: 7rem;
     }
 
     .advertisement-designWrap .dropDown-2 {
-        height: 12rem;
-        width: 56dvw;
-        border-radius: 12px;
-        margin-bottom: 6rem;
-        backdrop-filter: blur(5px);
-        
+        height: 14rem;
+        margin-bottom: 8rem;
     }
 
     .advertisement-design {
-        display: grid;
-        grid-template-rows: 1fr .1fr .2fr;
-        align-items: center;
-        justify-content: center;
-
-        width: 80dvw;
-        height: 11rem;
-        background-image: url('../images/Rectangle 39265.png');
-        background-size: 120% ;
-        background-repeat: no-repeat;
-        background-position: bottom left;
-        border-top: 1px solid #ffffff92;
-        border-right: 1px solid #ffffff92;
-        border-radius: 5px;
+        height: 17rem;
         z-index: 3;
-        backdrop-filter: blur(5px);
-    }
-
-/* Advertisement design image styling */
-
-    .advertisement-design .img-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .advertisement-design .img-container img{
-        max-width: 90%;
     }
 
 /* Advertisement design text/link styling */
     
     .advertisement-design .identity {
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-        font-size: 5px;
-        line-height:  117%;
-        justify-content: start;
-        margin-left: 5.2%;
+        font-size: 9px;
+        line-height: 15px;
     }
 
     .advertisement-design .identity .company-name {
-        font-size: 6px;
-        color: #FFFFFF;
-        
+        font-size: 11px;
     }
 
-    .advertisement-design .link-CS {
-        display: flex;
-        justify-content: right;
-        width: 100%;
-    }
     .advertisement-design .link-CS a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3px;
-        padding: 5px 0;
-        margin-right: 5.2%;
-        margin-bottom: 0;
-        font-family: 'Work Sans';
-        font-size: 5px;
-        font-weight: 500;
-        line-height: 5px;
+        font-size: 7px;
     }
     
 /* ... */
@@ -2329,63 +4179,63 @@
 /* View our portfolio text styling */
 
     .portfolio {
-        gap: 1rem;
+        gap: .4rem;
     }
 
     .portfolio .text {
-        font-family: 'Gobold';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 19px;
+        font-size: 24px;
         line-height: 123%;
-        letter-spacing: -0.15px;
+        letter-spacing: -0.3px;
     }
     
     .portfolio .redirect-portfolio {
-        font-size: 6px;
+        font-size: 8px;
         line-height: 83%;
-        gap: 2px;
+        gap: 5px;
     }
 
 /* ... */
+        
+    .repositioned-quote-wrap {
+        top: 65%;
+        width: 13px;
+        left: 1.2rem;
+    }
+
+    .repositioned-quote {
+        width: 45rem;
+        height: 15px;
+    }
+
+    .repositioned-quote .gray-eclipse {
+        width: 7px;
+        height: 7px;
+    }
+
+    .repositioned-quote p{
+        margin: 0 5px;
+        font-size: 9px;
+        line-height: 10px;
+    }
 
 /* Contact us view */
 
     .contact-area-wrap {
-        margin-top: 70px;
+        margin-top: 6rem;
         margin-bottom: 5rem;
         display: flex;
         flex-direction: column;
-        gap: 5rem;
-        width: 100%;
-    }
-
-    .contact-area-wrap .line {
-        width: 85dvw;
-        opacity: 0.2;
-        align-self: center;
-    }
-
-    .contact-area {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 80dvw;
-        margin: 0 9%;
-        column-gap: 8dvw;
-        position: relative;
-        
+        gap: 4.5rem;
     }
 
     .contact-area .contact-us {
-        gap: 7px;
+        gap: 13px;
 
     }
     .contact-area .goal {
-        font-size: 19px;
+        font-size: 30px;
         line-height: 132%;
-        letter-spacing: -0.15px;
-        
-        color: #FFFFFF;
+        letter-spacing: -0.5px;
     }
 
     .contact-area .goal .special {
@@ -2393,115 +4243,564 @@
     }
 
     .contact-area .A-goal {
-        width: 143px;
-        font-size: 6px;
-        line-height: 167%;
+        width: 195px;
+        font-size: 9px;
     }
     
     .contact-area a button {
-        width: 50px;
-        height: 20px;
-        background: linear-gradient(45deg, rgba(15, 23, 31, 0.07) 5.65%, rgba(95, 133, 177, 0.1715) 94.35%);
-        backdrop-filter: blur(4px);
+        width: 90px;
+        height: 25px;
         border: .5px solid;
-        font-size: 4.7px;
-        line-height:  100%;
+        font-size: 6.5px;
     }
 
-    /* Footer styling */
-
-
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
+/* Footer */
 
     .footer {
-        width: 80%;
-        margin: 3rem 0;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-
+        margin: 2.5rem 0;
+        gap: 1.5rem;
     }
 
 /* Footer About */
 
     .footer .about {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
 
     .footer .about .lorem {
-        font-weight: 400;
-        font-size: 9px;
-        line-height: 150%;
+        font-size: 9.5px;
     }
 
     .footer .about form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        padding: 0  10px;
-        width: 15rem;
-        height: 46px;
-        border: .4px solid #c7c3c3;
+        gap: 3px;
+        padding: 0 10px;
+        width: 12rem;
+        height: 35px;
         border-radius: 4px;
     }
+    
+    .footer .about form:focus-within {
+        width: 12.5rem;
+        height: 36px;
+        font-size: 8px;
+     }
 
-    .footer .about form input::placeholder {
-        font-size: 9px;
-        line-height: 150%;
+     
+     .footer .about form input {
+        font-size: 8px;
+    }
+     
+     .footer .about form input::placeholder {
+        font-size: 8px;
     }
 
     .footer .about form button {
-        height: 12px;
-        width: 12px;
-        font-size: 10px;
-
+        height: 8px;
+        width: 8px;
+        font-size: 9px;
     }
 
-    .footer .about form:focus-within {
-       width: 16rem;
-       height: 46px;
+    .footer .about .credit {
+        font-size: 7px;
     }
+
 /* footer styling continue, end of about */
 
     .footer .page-redirect, .footer .social-media-links, .footer .contact {
-        display: flex;
-        flex-direction: column;
         gap: 10px;
     }
 
     .footer .page-redirect p, .footer .social-media-links p, .footer .contact p {
-        font-size: 10px;
-        line-height: 100%;
+        font-size: 12px;
     }
 
     .footer .page-redirect ul, .footer .social-media-links ul, .footer .contact ul {
-        
-        font-size: 8px;
-        line-height: 150%;
-        gap: 10px;
+        font-size: 9px;
+        gap: 9px;
     }
     
     .footer .credit {
-        font-size: 4px;
+        font-size: 7px;
         line-height: 150%;
         color: #FFFFFF;
         opacity: 0.6; 
     }
 
-    .footer .about .credit {
-        display: none;
+    .footer .second-credit {
+        margin-top: 1rem;
+        display: inline; 
+    }
+
+    
+
+}
+
+@media only screen and (max-width:460px) {
+
+    .first-view {
+        height: 70em;
+        gap: 0rem;
+    }
+
+    .logo img {
+        height: 25px;
+        width: 60px;
+    }
+
+    .nav ul li{
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .nav ul li:hover{
+        font-size: 11px;
+    }
+
+    .nav ul{
+        gap: .8rem;
+    }
+
+    .nav ul .current .active {
+        gap: 2x;
+    }
+    .nav ul .current .active .indicator{
+        height: 1.5px;
+        width: 23px;
+    }
+
+/* Welcome View content */
+
+    .welcome_view_content {
+        gap: .5rem;
+        margin-top: 2.5rem;
+        margin-top: 12vh;
+    }
+
+    .welcome_view_content .text_1 {
+        font-size: 42px;
+        letter-spacing: -.5px;
+    }
+
+    .welcome_view_content .text_2 {
+        height: 38px;
+        width: 200px;
+        font-size: 9px;
+    }
+
+    .welcome_view_content .text_3 {
+        font-size: 5px;
+        line-height: 7px;        
+    }
+
+/* Floating divs */
+
+    .floating-display .float {
+        right: 2rem;
+        top: 40rem;
+        top: 85%;
+        gap: 3px;
+        height: 42px;
+        width: 80px;
+        border-radius: 4px;
+         box-shadow: .5px 0px 0 .5px #f5f0f0;
+        border-top: 1px solid #252f34;
+        border-left: 1px solid #3b4646;
+        
+    }
+
+    
+    .floating-display .float .dot {
+        height: 4px;
+        width: 4px;
+        margin-bottom: 1.5rem;
+    }
+
+    .floating-display .float p {
+        font-size: 4px;
+        line-height: 7px;
+        height: 30px;
+        width: 62px;
+    }
+
+    .floating-display .float1 {
+        right: 3.5rem;
+        top: 5rem;
+        height: 42px;
+        width: 80px;
+    }
+
+    .floating-display .float1 p {
+        font-size: 4px;
+        line-height: 7px;
+        height: 30px;
+        width: 62px;
+    }
+    
+    .service-quote {
+        height: 20rem;
+        gap: 1.2rem;
+        padding: 1rem 0;
+    }
+
+/* Moon Eclipse */
+
+    .eclipse {
+        width: 23.4px;
+        height: 23.4px;
+    }
+
+/* Service text styling*/
+
+    .service-quote .heading{
+        font-size: 13px;
+    }
+
+    .service-quote .text1-sub {
+        font-size: 8px;
+        height: 57px;
+        width: 222px;
+    }
+
+    
+    .service-quote .create {
+        grid-template-columns: .15fr 1fr;
+        gap: .5rem 0;
+        
+    }
+
+    .service-quote .brand {
+        grid-template-columns: .15fr 1fr;
+        gap: .5rem 0;
+        
+    }
+
+    .service-quote .market {
+        grid-template-columns: .15fr 1fr;
+        gap: .5rem 0;
+    }
+
+    .services .heading {
+        gap: 5px; 
+    }
+
+    .services .heading .heading-subA {
+        font-size: 10px;
+        letter-spacing: 5px;
+        
+    }
+
+    .services .heading .heading-subB {
+        font-size: 30px;
+    }
+
+/* Glass Frame Decoration */
+
+    .glass-frame-outer {
+        height: 22.5rem;
+        border-radius: 10px;
+        box-shadow: -1px -.5px 1px #ffffffc1, 1px 1px 1px #ffffff15, 1px -1px .7px .1px #ffffff77;
+        border-bottom: 2px solid transparent;
+        border-right: 1.5px solid #ffffff18;
+    }
+
+    .glass-frame-inner {
+        height: 21rem;
+        width: 92%;
+        box-shadow: inset -1px -1px .1px 0 #ffffff78, 
+        inset -1px 1px 1px 0px #ffffffbf,
+        inset .3px 2px 1px 0px rgba(95, 133, 177, 0.1715)
+        ;
+    }
+
+    .glass-frame-content {
+        width: 95%;
+        height: 20rem;
+        row-gap: 5px;
+
+    }
+
+    .glass-frame-content .p-one{
+        font-size: 10px;
+    }
+
+    .glass-frame-content .p-two{
+        font-size: 7px;
+    }
+
+    .glass-frame-content .word {
+        gap: 3px;
+    }
+
+    .glass-frame-content img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .glass-frame-content  .pad-left {
+        padding-left: 5px;
+    }
+
+/* Glass frame Button setup */
+
+    .glass-frame-content .button-container button{
+        width: 85px;
+        height: 25px;
+        font-size: 6px;
+    }
+
+/* ... */
+
+/* Who We Are */
+       
+    .body-content .who-we-are {
+        gap: .3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        height: 8.5rem;
+    }
+
+    .body-content .who-we-are .intro {
+        font-size: 30px;
+    }
+
+    .body-content .who-we-are .content {
+        font-size: 7px;
+    }
+
+    .repositioned-quote-wrap {
+        top: 65%;
+        left: 1.2rem;
+    }
+
+    .repositioned-quote {
+        width: 41.5rem;
+        height: 15px;
+    }
+
+/* Advertisement Design */
+
+    .advertisement-designWrap {
+        height: 20rem;
+        margin: 1.5rem 0;
+    }
+
+    .advertisement-designWrap .dropDown-1 {
+        height: 9rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .advertisement-designWrap .dropDown-2 {
+        height: 10rem;
+        margin-bottom: 7.7rem;
+    }
+
+    .advertisement-design {
+        height: 13rem;
+    }
+
+/* Advertisement design text/link styling */
+    
+    .advertisement-design .identity {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .advertisement-design .identity .company-name {
+        font-size: 10px;
+    }
+
+    .advertisement-design .link-CS a{
+        font-size: 6px;
+        gap: 3.5px;
+    }
+    
+/* ... */
+
+/* View our portfolio text styling */
+
+    .portfolio {
+        margin-top: 1rem;
+        gap: .3rem;
+    }
+
+    .portfolio .text {
+        font-size: 21px;
+        letter-spacing: -0.1px;
+    }
+    
+    .portfolio .redirect-portfolio {
+        font-size: 8px;
+        line-height: 83%;
+        gap: 5px;
+    }
+
+/* ... */
+
+/* Contact us view */
+
+    .contact-area-wrap {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        gap: 4.5rem;
+    }
+
+    .contact-area .contact-us {
+        gap: 10px;
+
+    }
+    .contact-area .goal {
+        font-size: 27px;
+        letter-spacing: -0.3px;
+    }
+
+    .contact-area .goal .special {
+        -webkit-text-stroke: .2px #fff;
+    }
+
+    .contact-area .A-goal {
+        width: 165px;
+        font-size: 8px;
+    }
+    
+    .contact-area a button {
+        width: 70px;
+        height: 25px;
+        border: .3px solid;
+        font-size: 5px;
+    }
+
+    .body-content {
+        height: 135em;
+        gap: 1.2rem;
+        margin-top: 2.5rem;
+    }
+
+/* Footer */
+
+    .footer {
+        margin: 2rem 0;
+        gap: 1.5rem;
+    }
+
+/* Footer About */
+
+    .footer .about {
+        gap: 8px;
+    }
+
+    .footer .about .lorem {
+        font-size: 7.7px;
+    }
+
+    .footer .about form {
+        gap: 3px;
+        padding: 0 10px;
+        width: 9rem;
+        height: 30px;
+    }
+    
+    .footer .about form:focus-within {
+        width: 10.5rem;
+        height: 31px;
+        font-size: 7.7px;
+     }
+
+     
+     .footer .about form input {
+        font-size: 8px;
+    }
+     
+     .footer .about form input::placeholder {
+        font-size: 8px;
+    }
+
+    .footer .about form button {
+        height: 7.5px;
+        width: 7.5px;
+        font-size: 8px;
+    }
+
+/* footer styling continue, end of about */
+
+    .footer .page-redirect, .footer .social-media-links, .footer .contact {
+        gap: 8px;
+    }
+
+    .footer .page-redirect p, .footer .social-media-links p, .footer .contact p {
+        font-size: 10px;
+    }
+
+    .footer .page-redirect ul, .footer .social-media-links ul, .footer .contact ul {
+        font-size: 7.5px;
+        gap: 8px;
+    }
+    
+    .footer .credit {
+        font-size: 7px;
     }
 
     .footer .second-credit {
-        display: inline; 
+        margin-top: .8rem;
     }
 }
- 
+
+@media only screen and (max-width:400px) {
+
+/* Welcome View content */
+
+    .welcome_view_content {
+        gap: .3rem;
+        margin-top: 12vh;
+    }
+
+    .welcome_view_content .text_1 {
+        font-size: 38px;
+        letter-spacing: -.5px;
+    }
+
+    .welcome_view_content .text_2 {
+        height: 34px;
+        width: 160px;
+        font-size: 7.5px;
+    }
+
+    .welcome_view_content .text_3 {
+        font-size: 4px;
+        line-height: 3px;        
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .first-view {
+        height: 60em;
+    }
+
+    .floating-display .float {
+        right: 2rem;
+        top: 85%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+
+}
+
+@media only screen and (max-width:900px) and (min-height:900px) {
+    .header {
+        margin-top: 2rem;
+    }
+
+    .first-view {
+        height: 140vh;
+        gap: 5rem;
+    }
+
+    .welcome_view_content {
+        margin-top: 3rem;
+    }
+
+    .floating-display .float {
+        top: 82vh;
+    }
+    
+}
